@@ -8,78 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#F0F8F1; --ink:#1E3A2D; --muted:#4D6A5B; --line:#CFE3D4;
-  --blue:#2F7D5A; --btn:#A8DDB9; --sun:#C6EBD0; --white:#FFFFFF;
-  --head:'Bricolage Grotesque',Georgia,sans-serif;
-  --body:'Instrument Sans',system-ui,-apple-system,Segoe UI,sans-serif;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
-a{color:var(--blue)}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
-h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
-h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:1rem}
-section{padding:4.5rem 0;border-top:2px solid var(--ink)}
-p{max-width:62ch}
-
-/* nav */
-header{position:sticky;top:0;background:var(--paper);z-index:5;border-bottom:2px solid var(--ink)}
-nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1.25rem;max-width:1040px;margin:0 auto}
-.logo{font-family:var(--head);font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--ink)}
-nav ul{display:flex;gap:1.25rem;list-style:none;padding:0}
-nav ul a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
-nav ul a:hover{text-decoration:underline}
-@media(max-width:600px){nav ul{gap:.8rem}nav ul a{font-size:.85rem}}
-
-/* hero */
-.hero{padding:5rem 0 4rem;border-top:0}
-.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;max-width:11ch}
-.hero h1 span{background:var(--sun);padding:0 .15em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.hero p{font-size:1.25rem;margin:1.5rem 0 2rem;color:var(--muted)}
-.btn{display:inline-block;background:var(--btn);color:var(--ink);font-weight:600;text-decoration:none;padding:.85rem 1.5rem;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
-.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
-.btn.alt{background:var(--white);color:var(--ink);margin-left:.6rem}
-
-/* qué / por qué */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-@media(max-width:760px){.two{grid-template-columns:1fr;gap:2rem}}
-.why{background:#CDE9D6;color:var(--ink);border:2px solid var(--ink);padding:2rem;border-radius:4px}
-.why h3{font-size:1.5rem;margin-bottom:.8rem}
-.why ul{padding-left:1.1rem}
-.why li{margin:.5rem 0}
-
-/* tools */
-.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}
-.filters button{font:inherit;font-weight:500;background:transparent;color:var(--ink);border:2px solid var(--ink);padding:.4rem 1rem;border-radius:99px;cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.9rem;align-items:start}
-.tool{background:var(--white);border:2px solid var(--ink);border-radius:4px;border-top-width:8px}
-.tool[data-phase="Discover"]{border-top-color:#8FD0A8}
-.tool[data-phase="Ideate"]{border-top-color:#D3EBB3}
-.tool[data-phase="Test"]{border-top-color:#A9DFD3}
-.tool[data-phase="Scale"]{border-top-color:#6DBB92}
-.tool summary{list-style:none;cursor:pointer;padding:.8rem 2.2rem .8rem .9rem;position:relative;display:flex;flex-direction:column;gap:.15rem}
-.tool summary::-webkit-details-marker{display:none}
-.tool summary::after{content:"+";position:absolute;right:.8rem;top:.6rem;font-family:var(--head);font-weight:700;font-size:1.3rem;line-height:1}
-.tool details[open] summary::after{content:"\2212"}
-.tool summary:hover{background:#EAF6ED}
-.tool h3{font-size:1.05rem;line-height:1.2}
-.tool p{font-size:.95rem;color:var(--muted);padding:0 .9rem .9rem}
-.meta{font-size:.8rem;font-weight:600;color:var(--muted)}
-.tool[hidden]{display:none}
-
-/* contacto */
-.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem}
-.contact{border:2px solid var(--ink);padding:1.2rem;background:#E3F3E7;border-radius:4px}
-.contact strong{font-family:var(--head);font-size:1.15rem;display:block}
-.contact span{display:block;color:var(--muted);font-size:.95rem;margin-bottom:.4rem}
-footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(--muted)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -89,7 +18,8 @@ footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#why">Why</a></li>
-      <li><a href="#tools">Tools</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
       <li><a href="#share">Share</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -101,7 +31,7 @@ footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(
   <div class="wrap">
     <h1>From <span>8th grade</span> to 1st year of high school.</h1>
     <p>An innovation planning toolbox for EFL teachers in Chile: understand your students, design better lessons, test them fast and build a plan that lasts the whole school year.</p>
-    <a class="btn" href="#tools">Explore the tools</a>
+    <a class="btn" href="#activities">Explore the activities</a>
     <a class="btn alt" href="#contact">Contact us</a>
   </div>
 </section>
@@ -115,8 +45,8 @@ footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(
     </div>
     <div>
       <h2>How it works</h2>
-      <p>The tools are grouped into four phases: <strong>Discover</strong> what your students need, <strong>Ideate</strong> new classroom strategies, <strong>Test</strong> them with small experiments and <strong>Scale</strong> what works.</p>
-      <p style="margin-top:1rem">Choose a phase, open a tool and work on your own or with your department.</p>
+      <p>The toolbox has <strong>9 classroom activities</strong>, each with its own page, and <strong>2 evaluation checklists</strong> to reflect on how they worked.</p>
+      <p style="margin-top:1rem">Pick an activity, try it with your students and use the checklists to evaluate it.</p>
     </div>
   </div>
 </section>
@@ -140,44 +70,31 @@ footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(
   </div>
 </section>
 
-<section id="tools">
+<section id="activities">
   <div class="wrap">
-    <h2>The tools</h2>
-    <p>Filter by phase and tap a tool to see its description.</p>
-    <div class="filters" role="group" aria-label="Filter by phase">
-      <button aria-pressed="true" data-f="All">All</button>
-      <button aria-pressed="false" data-f="Discover">Discover</button>
-      <button aria-pressed="false" data-f="Ideate">Ideate</button>
-      <button aria-pressed="false" data-f="Test">Test</button>
-      <button aria-pressed="false" data-f="Scale">Scale</button>
+    <h2>The 9 activities</h2>
+    <p>Tap an activity to open its own page with objectives, materials and steps.</p>
+    <div class="grid cards" style="margin-top:1.5rem">
+      <a class="card" href="activity-1.html"><h3>Activity 1</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-2.html"><h3>Activity 2</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-3.html"><h3>Activity 3</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-4.html"><h3>Activity 4</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-5.html"><h3>Activity 5</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-6.html"><h3>Activity 6</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-7.html"><h3>Activity 7</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-8.html"><h3>Activity 8</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
+      <a class="card" href="activity-9.html"><h3>Activity 9</h3><p>Short description of the activity.</p><span class="meta">Level · 45 min</span></a>
     </div>
+  </div>
+</section>
 
-    <!-- To add a tool: copy an <article> block and change the text and data-phase -->
-    <div class="grid">
-      <article class="tool" data-phase="Discover">
-        <details><summary><h3>Student voice survey</h3><span class="meta">Discover · 30 min</span></summary><p>A short survey to learn how your students feel about English, what they enjoy and where they feel stuck.</p></details>
-      </article>
-      <article class="tool" data-phase="Discover">
-        <details><summary><h3>Transition gap map</h3><span class="meta">Discover · 60 min</span></summary><p>Compare skills and content from 8º básico with what 1º medio expects, and spot the gaps to work on.</p></details>
-      </article>
-      <article class="tool" data-phase="Ideate">
-        <details><summary><h3>Activity brainstorm + SCAMPER</h3><span class="meta">Ideate · 60 min</span></summary><p>Generate classroom activity ideas and adapt your current ones using seven guiding questions.</p></details>
-      </article>
-      <article class="tool" data-phase="Ideate">
-        <details><summary><h3>Backward lesson planner</h3><span class="meta">Ideate · 90 min</span></summary><p>Start from the learning goal, define how you will know students reached it, then design the lessons.</p></details>
-      </article>
-      <article class="tool" data-phase="Test">
-        <details><summary><h3>Mini-pilot lesson</h3><span class="meta">Test · 1 class</span></summary><p>Try a new activity with one course for a single class and collect quick feedback from students.</p></details>
-      </article>
-      <article class="tool" data-phase="Test">
-        <details><summary><h3>Experiment matrix</h3><span class="meta">Test · 45 min</span></summary><p>Write your hypothesis, how you will measure it and what counts as success before you try a new strategy.</p></details>
-      </article>
-      <article class="tool" data-phase="Scale">
-        <details><summary><h3>Reflection log</h3><span class="meta">Scale · 15 min/week</span></summary><p>Record what worked, what did not and what you will change, so your learning is not lost.</p></details>
-      </article>
-      <article class="tool" data-phase="Scale">
-        <details><summary><h3>Innovation roadmap</h3><span class="meta">Scale · 2 h</span></summary><p>Order your initiatives by impact and effort and set milestones for each term of the school year.</p></details>
-      </article>
+<section id="evaluation">
+  <div class="wrap">
+    <h2>Evaluation tools</h2>
+    <p>Two checklists to evaluate how the activities worked in your classroom.</p>
+    <div class="grid cards" style="margin-top:1.5rem">
+      <a class="card eval" href="checklist-1.html"><h3>Checklist 1</h3><p>Evaluation checklist for the teacher.</p><span class="meta">Evaluation · tap to open</span></a>
+      <a class="card eval" href="checklist-2.html"><h3>Checklist 2</h3><p>Evaluation checklist for the teacher.</p><span class="meta">Evaluation · tap to open</span></a>
     </div>
   </div>
 </section>
@@ -232,13 +149,5 @@ footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(
   <div class="wrap">© 2026 Innovation Plan Toolbox · For EFL teachers in Chile</div>
 </footer>
 
-<script>
-const btns=document.querySelectorAll('.filters button');
-const tools=document.querySelectorAll('.tool');
-btns.forEach(b=>b.addEventListener('click',()=>{
-  btns.forEach(x=>x.setAttribute('aria-pressed',x===b));
-  tools.forEach(t=>t.hidden=!(b.dataset.f==='All'||t.dataset.phase===b.dataset.f));
-}));
-</script>
 </body>
 </html>
