@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innovation Plan Toolbox for EFL Teachers in Chile</title>
+<meta name="description" content="A toolbox for EFL teachers in Chile to plan innovation in the transition from 8º básico to 1º medio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F0F8F1; --ink:#1E3A2D; --muted:#4D6A5B; --line:#CFE3D4;
+  --blue:#2F7D5A; --btn:#A8DDB9; --sun:#C6EBD0; --white:#FFFFFF;
+  --head:'Bricolage Grotesque',Georgia,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:1rem}
+section{padding:4.5rem 0;border-top:2px solid var(--ink)}
+p{max-width:62ch}
+
+/* nav */
+header{position:sticky;top:0;background:var(--paper);z-index:5;border-bottom:2px solid var(--ink)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1.25rem;max-width:1040px;margin:0 auto}
+.logo{font-family:var(--head);font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--ink)}
+nav ul{display:flex;gap:1.25rem;list-style:none;padding:0}
+nav ul a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav ul a:hover{text-decoration:underline}
+@media(max-width:600px){nav ul{gap:.8rem}nav ul a{font-size:.85rem}}
+
+/* hero */
+.hero{padding:5rem 0 4rem;border-top:0}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;max-width:11ch}
+.hero h1 span{background:var(--sun);padding:0 .15em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero p{font-size:1.25rem;margin:1.5rem 0 2rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--btn);color:var(--ink);font-weight:600;text-decoration:none;padding:.85rem 1.5rem;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.alt{background:var(--white);color:var(--ink);margin-left:.6rem}
+
+/* qué / por qué */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:760px){.two{grid-template-columns:1fr;gap:2rem}}
+.why{background:#CDE9D6;color:var(--ink);border:2px solid var(--ink);padding:2rem;border-radius:4px}
+.why h3{font-size:1.5rem;margin-bottom:.8rem}
+.why ul{padding-left:1.1rem}
+.why li{margin:.5rem 0}
+
+/* tools */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}
+.filters button{font:inherit;font-weight:500;background:transparent;color:var(--ink);border:2px solid var(--ink);padding:.4rem 1rem;border-radius:99px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.9rem;align-items:start}
+.tool{background:var(--white);border:2px solid var(--ink);border-radius:4px;border-top-width:8px}
+.tool[data-phase="Discover"]{border-top-color:#8FD0A8}
+.tool[data-phase="Ideate"]{border-top-color:#D3EBB3}
+.tool[data-phase="Test"]{border-top-color:#A9DFD3}
+.tool[data-phase="Scale"]{border-top-color:#6DBB92}
+.tool summary{list-style:none;cursor:pointer;padding:.8rem 2.2rem .8rem .9rem;position:relative;display:flex;flex-direction:column;gap:.15rem}
+.tool summary::-webkit-details-marker{display:none}
+.tool summary::after{content:"+";position:absolute;right:.8rem;top:.6rem;font-family:var(--head);font-weight:700;font-size:1.3rem;line-height:1}
+.tool details[open] summary::after{content:"\2212"}
+.tool summary:hover{background:#EAF6ED}
+.tool h3{font-size:1.05rem;line-height:1.2}
+.tool p{font-size:.95rem;color:var(--muted);padding:0 .9rem .9rem}
+.meta{font-size:.8rem;font-weight:600;color:var(--muted)}
+.tool[hidden]{display:none}
+
+/* contacto */
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem}
+.contact{border:2px solid var(--ink);padding:1.2rem;background:#E3F3E7;border-radius:4px}
+.contact strong{font-family:var(--head);font-size:1.15rem;display:block}
+.contact span{display:block;color:var(--muted);font-size:.95rem;margin-bottom:.4rem}
+footer{border-top:2px solid var(--ink);padding:2rem 0;font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <nav aria-label="Main">
+    <a class="logo" href="#home">Innovation Plan Toolbox</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why">Why</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#share">Share</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>From <span>8th grade</span> to 1st year of high school.</h1>
+    <p>An innovation planning toolbox for EFL teachers in Chile: understand your students, design better lessons, test them fast and build a plan that lasts the whole school year.</p>
+    <a class="btn" href="#tools">Explore the tools</a>
+    <a class="btn alt" href="#contact">Contact us</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap two">
+    <div>
+      <h2>What it is</h2>
+      <p>The Innovation Plan Toolbox is a set of practical tools for English teachers working with students who move from 8º básico to 1º medio. Each tool has a clear purpose, simple steps and a concrete result.</p>
+      <p style="margin-top:1rem">Use them in order to build a full innovation plan, or pick the one you need for the challenge you have this week.</p>
+    </div>
+    <div>
+      <h2>How it works</h2>
+      <p>The tools are grouped into four phases: <strong>Discover</strong> what your students need, <strong>Ideate</strong> new classroom strategies, <strong>Test</strong> them with small experiments and <strong>Scale</strong> what works.</p>
+      <p style="margin-top:1rem">Choose a phase, open a tool and work on your own or with your department.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap two">
+    <div>
+      <h2>The why behind it</h2>
+      <p>The move from primary to secondary school is a delicate moment for English learning. Students face more demanding content, a new school routine and, often, a drop in motivation and confidence.</p>
+      <p style="margin-top:1rem">Many teachers want to innovate but have little time and no shared method. This toolbox gives EFL teachers a common language and small, realistic steps to make this transition smoother for their students.</p>
+    </div>
+    <div class="why">
+      <h3>What we aim for</h3>
+      <ul>
+        <li>Close the gap between 8º básico and 1º medio.</li>
+        <li>Keep students motivated and speaking English.</li>
+        <li>Decide with evidence from your own classroom.</li>
+        <li>Share what works with other teachers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>The tools</h2>
+    <p>Filter by phase and tap a tool to see its description.</p>
+    <div class="filters" role="group" aria-label="Filter by phase">
+      <button aria-pressed="true" data-f="All">All</button>
+      <button aria-pressed="false" data-f="Discover">Discover</button>
+      <button aria-pressed="false" data-f="Ideate">Ideate</button>
+      <button aria-pressed="false" data-f="Test">Test</button>
+      <button aria-pressed="false" data-f="Scale">Scale</button>
+    </div>
+
+    <!-- To add a tool: copy an <article> block and change the text and data-phase -->
+    <div class="grid">
+      <article class="tool" data-phase="Discover">
+        <details><summary><h3>Student voice survey</h3><span class="meta">Discover · 30 min</span></summary><p>A short survey to learn how your students feel about English, what they enjoy and where they feel stuck.</p></details>
+      </article>
+      <article class="tool" data-phase="Discover">
+        <details><summary><h3>Transition gap map</h3><span class="meta">Discover · 60 min</span></summary><p>Compare skills and content from 8º básico with what 1º medio expects, and spot the gaps to work on.</p></details>
+      </article>
+      <article class="tool" data-phase="Ideate">
+        <details><summary><h3>Activity brainstorm + SCAMPER</h3><span class="meta">Ideate · 60 min</span></summary><p>Generate classroom activity ideas and adapt your current ones using seven guiding questions.</p></details>
+      </article>
+      <article class="tool" data-phase="Ideate">
+        <details><summary><h3>Backward lesson planner</h3><span class="meta">Ideate · 90 min</span></summary><p>Start from the learning goal, define how you will know students reached it, then design the lessons.</p></details>
+      </article>
+      <article class="tool" data-phase="Test">
+        <details><summary><h3>Mini-pilot lesson</h3><span class="meta">Test · 1 class</span></summary><p>Try a new activity with one course for a single class and collect quick feedback from students.</p></details>
+      </article>
+      <article class="tool" data-phase="Test">
+        <details><summary><h3>Experiment matrix</h3><span class="meta">Test · 45 min</span></summary><p>Write your hypothesis, how you will measure it and what counts as success before you try a new strategy.</p></details>
+      </article>
+      <article class="tool" data-phase="Scale">
+        <details><summary><h3>Reflection log</h3><span class="meta">Scale · 15 min/week</span></summary><p>Record what worked, what did not and what you will change, so your learning is not lost.</p></details>
+      </article>
+      <article class="tool" data-phase="Scale">
+        <details><summary><h3>Innovation roadmap</h3><span class="meta">Scale · 2 h</span></summary><p>Order your initiatives by impact and effort and set milestones for each term of the school year.</p></details>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="share">
+  <div class="wrap two">
+    <div>
+      <h2>Share your practice</h2>
+      <p>Did you try one of these tools in your classroom? Tell us what you did, what you observed and what you concluded. Your experience can help other EFL teachers.</p>
+      <p style="margin-top:1rem">It takes about 5 minutes. Please do not include students' names or personal data.</p>
+      <p style="margin-top:1.5rem"><a class="btn" href="PASTE-YOUR-GOOGLE-FORM-LINK-HERE" target="_blank" rel="noopener">Open the form</a></p>
+    </div>
+    <div class="why">
+      <h3>The form asks for</h3>
+      <ul>
+        <li>The tool you used and the course level.</li>
+        <li>Your checklist or steps.</li>
+        <li>Your observations.</li>
+        <li>Your conclusions.</li>
+        <li>The strategy you used and whether you would repeat it.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Want to use the toolbox with your department, suggest a tool or ask a question? Write to us.</p>
+    <div class="contacts">
+      <div class="contact">
+        <strong>Alejandro Garcia</strong>
+        <span>Project coordination</span>
+        <a href="mailto:alejandro.garcia.h@mail.pucv.cl">alejandro.garcia.h@mail.pucv.cl</a>
+      </div>
+      <div class="contact">
+        <strong>Alvaro Moreno</strong>
+        <span>Methodology and tools</span>
+        <a href="mailto:alvaro.moreno.s@mail.pucv.cl">alvaro.moreno.s@mail.pucv.cl</a>
+      </div>
+      <div class="contact">
+        <strong>Valentina Farias</strong>
+        <span>Partnerships and support</span>
+        <a href="mailto:valentina.farias.c@mail.pucv.cl">valentina.farias.c@mail.pucv.cl</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Innovation Plan Toolbox · For EFL teachers in Chile</div>
+</footer>
+
+<script>
+const btns=document.querySelectorAll('.filters button');
+const tools=document.querySelectorAll('.tool');
+btns.forEach(b=>b.addEventListener('click',()=>{
+  btns.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  tools.forEach(t=>t.hidden=!(b.dataset.f==='All'||t.dataset.phase===b.dataset.f));
+}));
+</script>
+</body>
+</html>
