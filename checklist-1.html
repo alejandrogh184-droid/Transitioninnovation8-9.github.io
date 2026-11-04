@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Checklist 1 · Innovation Plan Toolbox</title>
+<title>Initial checklist · Innovation Plan Toolbox</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,18 +23,28 @@
 </header>
 <main class="sub"><div class="wrap">
 <a class="back" href="index.html#evaluation">← Evaluation tools</a>
-<h1>Checklist 1</h1>
-<p>Evaluation checklist for the teacher. Tick each item as you go.</p>
-<div class="check"><ul>
-    <li><label><input type="checkbox"> Criterion 1: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 2: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 3: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 4: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 5: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 6: write what to check here.</label></li>
-</ul></div>
-<div class="actions"><button class="btn" onclick="window.print()">Print or save as PDF</button><button class="btn alt" onclick="document.querySelectorAll('.check input').forEach(c=>c.checked=false)">Clear</button></div>
-<div class="pager"><a href="activity-9.html">← Activity 9</a><a href="checklist-2.html">Checklist 2 →</a></div>
+<h1>Initial checklist</h1>
+<div class="note"><strong>Objective:</strong> To assess teacher observations of 9th grade students’ engagement patterns across academic expectations, social relationships and teaching methodologies prior to implementing targeted engagement activities.</div>
+<div class="note scale"><strong>Rating scale</strong><br>1 = Never / 2 = Rarely / 3 = Sometimes / 4 = Often / 5 = Always</div>
+<form class="checkform">
+<h2>Academic expectations</h2>
+<fieldset class="item"><legend>1. Students respond to the learning goals and required outcomes for 9th grade English.</legend><div class="rate"><label><input type="radio" name="d1i1" value="1"><span>1</span></label><label><input type="radio" name="d1i1" value="2"><span>2</span></label><label><input type="radio" name="d1i1" value="3"><span>3</span></label><label><input type="radio" name="d1i1" value="4"><span>4</span></label><label><input type="radio" name="d1i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. Students show willingness to invest effort in completing the classroom tasks.</legend><div class="rate"><label><input type="radio" name="d1i2" value="1"><span>1</span></label><label><input type="radio" name="d1i2" value="2"><span>2</span></label><label><input type="radio" name="d1i2" value="3"><span>3</span></label><label><input type="radio" name="d1i2" value="4"><span>4</span></label><label><input type="radio" name="d1i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. Students perceive English tasks relevant to their personal interests.</legend><div class="rate"><label><input type="radio" name="d1i3" value="1"><span>1</span></label><label><input type="radio" name="d1i3" value="2"><span>2</span></label><label><input type="radio" name="d1i3" value="3"><span>3</span></label><label><input type="radio" name="d1i3" value="4"><span>4</span></label><label><input type="radio" name="d1i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs1"></textarea></label>
+<h2>Social relationships</h2>
+<fieldset class="item"><legend>1. Students interact with peers during pair or group work.</legend><div class="rate"><label><input type="radio" name="d2i1" value="1"><span>1</span></label><label><input type="radio" name="d2i1" value="2"><span>2</span></label><label><input type="radio" name="d2i1" value="3"><span>3</span></label><label><input type="radio" name="d2i1" value="4"><span>4</span></label><label><input type="radio" name="d2i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. Students collaborate with classmates to complete shared language tasks.</legend><div class="rate"><label><input type="radio" name="d2i2" value="1"><span>1</span></label><label><input type="radio" name="d2i2" value="2"><span>2</span></label><label><input type="radio" name="d2i2" value="3"><span>3</span></label><label><input type="radio" name="d2i2" value="4"><span>4</span></label><label><input type="radio" name="d2i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. Students participate voluntarily, ask questions or share ideas aloud.</legend><div class="rate"><label><input type="radio" name="d2i3" value="1"><span>1</span></label><label><input type="radio" name="d2i3" value="2"><span>2</span></label><label><input type="radio" name="d2i3" value="3"><span>3</span></label><label><input type="radio" name="d2i3" value="4"><span>4</span></label><label><input type="radio" name="d2i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs2"></textarea></label>
+<h2>Teaching methodologies</h2>
+<fieldset class="item"><legend>1. Students follow explanations and instructions when autonomous or communicative tasks are assigned.</legend><div class="rate"><label><input type="radio" name="d3i1" value="1"><span>1</span></label><label><input type="radio" name="d3i1" value="2"><span>2</span></label><label><input type="radio" name="d3i1" value="3"><span>3</span></label><label><input type="radio" name="d3i1" value="4"><span>4</span></label><label><input type="radio" name="d3i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. Students start adapting to the methodological expectations of 9th grade.</legend><div class="rate"><label><input type="radio" name="d3i2" value="1"><span>1</span></label><label><input type="radio" name="d3i2" value="2"><span>2</span></label><label><input type="radio" name="d3i2" value="3"><span>3</span></label><label><input type="radio" name="d3i2" value="4"><span>4</span></label><label><input type="radio" name="d3i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. Students show active interest when communicative teaching strategies are introduced.</legend><div class="rate"><label><input type="radio" name="d3i3" value="1"><span>1</span></label><label><input type="radio" name="d3i3" value="2"><span>2</span></label><label><input type="radio" name="d3i3" value="3"><span>3</span></label><label><input type="radio" name="d3i3" value="4"><span>4</span></label><label><input type="radio" name="d3i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs3"></textarea></label>
+<div class="actions"><button class="btn" type="button" onclick="window.print()">Print or save as PDF</button><button class="btn alt" type="reset">Clear</button></div>
+</form>
+<div class="pager"><a href="activity-9.html">← Activity 9</a><a href="checklist-2.html">Follow-up checklist →</a></div>
 </div></main>
 <footer><div class="wrap">© 2026 Innovation Plan Toolbox · For EFL teachers in Chile</div></footer>
 </body>

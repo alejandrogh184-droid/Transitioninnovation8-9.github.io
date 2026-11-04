@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Checklist 2 · Innovation Plan Toolbox</title>
+<title>Follow-up checklist · Innovation Plan Toolbox</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,18 +23,28 @@
 </header>
 <main class="sub"><div class="wrap">
 <a class="back" href="index.html#evaluation">← Evaluation tools</a>
-<h1>Checklist 2</h1>
-<p>Evaluation checklist for the teacher. Tick each item as you go.</p>
-<div class="check"><ul>
-    <li><label><input type="checkbox"> Criterion 1: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 2: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 3: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 4: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 5: write what to check here.</label></li>
-    <li><label><input type="checkbox"> Criterion 6: write what to check here.</label></li>
-</ul></div>
-<div class="actions"><button class="btn" onclick="window.print()">Print or save as PDF</button><button class="btn alt" onclick="document.querySelectorAll('.check input').forEach(c=>c.checked=false)">Clear</button></div>
-<div class="pager"><a href="checklist-1.html">← Checklist 1</a></div>
+<h1>Follow-up checklist</h1>
+<div class="note"><strong>Objective:</strong> To monitor students' engagement levels through observable behaviours following the implementation of engagement-focused activities in EFL lessons.</div>
+<div class="note scale"><strong>Rating scale</strong><br>1 = Never / 2 = Rarely / 3 = Sometimes / 4 = Often / 5 = Always</div>
+<form class="checkform">
+<h2>Academic expectations</h2>
+<fieldset class="item"><legend>1. Students completed the tasks according to the established learning objectives.</legend><div class="rate"><label><input type="radio" name="d1i1" value="1"><span>1</span></label><label><input type="radio" name="d1i1" value="2"><span>2</span></label><label><input type="radio" name="d1i1" value="3"><span>3</span></label><label><input type="radio" name="d1i1" value="4"><span>4</span></label><label><input type="radio" name="d1i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. Students showed active effort throughout the task.</legend><div class="rate"><label><input type="radio" name="d1i2" value="1"><span>1</span></label><label><input type="radio" name="d1i2" value="2"><span>2</span></label><label><input type="radio" name="d1i2" value="3"><span>3</span></label><label><input type="radio" name="d1i2" value="4"><span>4</span></label><label><input type="radio" name="d1i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. Students remained focused on achieving the activity’s learning goals.</legend><div class="rate"><label><input type="radio" name="d1i3" value="1"><span>1</span></label><label><input type="radio" name="d1i3" value="2"><span>2</span></label><label><input type="radio" name="d1i3" value="3"><span>3</span></label><label><input type="radio" name="d1i3" value="4"><span>4</span></label><label><input type="radio" name="d1i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs1"></textarea></label>
+<h2>Social relationships</h2>
+<fieldset class="item"><legend>1. The students interacted respectfully during the activity.</legend><div class="rate"><label><input type="radio" name="d2i1" value="1"><span>1</span></label><label><input type="radio" name="d2i1" value="2"><span>2</span></label><label><input type="radio" name="d2i1" value="3"><span>3</span></label><label><input type="radio" name="d2i1" value="4"><span>4</span></label><label><input type="radio" name="d2i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. The students worked collaboratively with their classmates to complete the activity.</legend><div class="rate"><label><input type="radio" name="d2i2" value="1"><span>1</span></label><label><input type="radio" name="d2i2" value="2"><span>2</span></label><label><input type="radio" name="d2i2" value="3"><span>3</span></label><label><input type="radio" name="d2i2" value="4"><span>4</span></label><label><input type="radio" name="d2i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. The students participated, asked questions and shared ideas during the activity.</legend><div class="rate"><label><input type="radio" name="d2i3" value="1"><span>1</span></label><label><input type="radio" name="d2i3" value="2"><span>2</span></label><label><input type="radio" name="d2i3" value="3"><span>3</span></label><label><input type="radio" name="d2i3" value="4"><span>4</span></label><label><input type="radio" name="d2i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs2"></textarea></label>
+<h2>Teaching methodologies</h2>
+<fieldset class="item"><legend>1. Students followed the instructions and procedures provided for the activity.</legend><div class="rate"><label><input type="radio" name="d3i1" value="1"><span>1</span></label><label><input type="radio" name="d3i1" value="2"><span>2</span></label><label><input type="radio" name="d3i1" value="3"><span>3</span></label><label><input type="radio" name="d3i1" value="4"><span>4</span></label><label><input type="radio" name="d3i1" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>2. Students independently carried out the different stages of the activity after receiving the instructions.</legend><div class="rate"><label><input type="radio" name="d3i2" value="1"><span>1</span></label><label><input type="radio" name="d3i2" value="2"><span>2</span></label><label><input type="radio" name="d3i2" value="3"><span>3</span></label><label><input type="radio" name="d3i2" value="4"><span>4</span></label><label><input type="radio" name="d3i2" value="5"><span>5</span></label></div></fieldset>
+<fieldset class="item"><legend>3. Students engaged with the materials and resources provided during the activity.</legend><div class="rate"><label><input type="radio" name="d3i3" value="1"><span>1</span></label><label><input type="radio" name="d3i3" value="2"><span>2</span></label><label><input type="radio" name="d3i3" value="3"><span>3</span></label><label><input type="radio" name="d3i3" value="4"><span>4</span></label><label><input type="radio" name="d3i3" value="5"><span>5</span></label></div></fieldset>
+<label class="obs">Observations<textarea rows="5" name="obs3"></textarea></label>
+<div class="actions"><button class="btn" type="button" onclick="window.print()">Print or save as PDF</button><button class="btn alt" type="reset">Clear</button></div>
+</form>
+<div class="pager"><a href="checklist-1.html">← Initial checklist</a></div>
 </div></main>
 <footer><div class="wrap">© 2026 Innovation Plan Toolbox · For EFL teachers in Chile</div></footer>
 </body>
