@@ -113,3 +113,5 @@ button.btn{font:inherit;font-weight:600;cursor:pointer}
 .rate input:focus-visible + span{outline:3px solid var(--blue);outline-offset:3px}
 .obs{display:block;font-weight:600;margin:1rem 0 2rem;max-width:70ch}
 .obs textarea{display:block;width:100%;margin-top:.4rem;font:inherit;padding:.7rem;border:2px solid var(--ink);border-radius:4px;background:var(--white)}
+.resource .linktext{font-size:.85rem;word-break:break-all;color:var(--muted)}
+.resource .linktext a{color:var(--blue)}
