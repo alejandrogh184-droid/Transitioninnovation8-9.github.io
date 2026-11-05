@@ -115,3 +115,17 @@ button.btn{font:inherit;font-weight:600;cursor:pointer}
 .obs textarea{display:block;width:100%;margin-top:.4rem;font:inherit;padding:.7rem;border:2px solid var(--ink);border-radius:4px;background:var(--white)}
 .resource .linktext{font-size:.85rem;word-break:break-all;color:var(--muted)}
 .resource .linktext a{color:var(--blue)}
+nav{flex-wrap:wrap}
+nav ul{flex-wrap:wrap}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.25rem;margin-top:1.5rem}
+.steps .card{padding:1.3rem;display:flex;flex-direction:column;gap:.4rem}
+.steps .card h3{font-size:1.35rem}
+.steps .step1{border-top-color:#8FD0A8}.steps .step2{border-top-color:#D3EBB3}.steps .step3{border-top-color:#A9DFD3}.steps .step4{border-top-color:#6DBB92}
+.num{display:inline-block;align-self:flex-start;background:var(--ink);color:var(--paper);font-family:var(--head);font-weight:700;font-size:.85rem;padding:.1rem .7rem;border-radius:99px}
+p.num{margin-top:.8rem}
+.card .mat{font-size:.88rem;font-weight:600;margin-top:.5rem}
+.card .go{margin-top:auto;padding-top:.8rem;font-weight:700;color:var(--blue)}
+.stepnav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.2rem;border-top:2px solid var(--ink);font-weight:600}
+.sub .resources{margin-top:1rem}
+.sub h3.mhead{font-size:1.6rem;margin:1.2rem 0 .4rem}
+.sub .grid.cards{margin-top:1.2rem}
