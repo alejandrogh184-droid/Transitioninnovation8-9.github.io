@@ -129,3 +129,15 @@ p.num{margin-top:.8rem}
 .sub .resources{margin-top:1rem}
 .sub h3.mhead{font-size:1.6rem;margin:1.2rem 0 .4rem}
 .sub .grid.cards{margin-top:1.2rem}
+.matgroups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1.25rem;margin-top:1.5rem}
+.matgroup{background:#E3F3E7;border:2px solid var(--ink);border-radius:4px;padding:1.2rem}
+.matgroup h3{font-size:1.2rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.8rem}
+.matlist{list-style:none;padding:0}
+.matlist li{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;background:var(--white);border:2px solid var(--ink);border-radius:4px;padding:.55rem .8rem;margin:.5rem 0}
+.matlist li>span:first-child{font-weight:600}
+.matlist em{font-style:normal;font-weight:500;font-size:.8rem;color:var(--muted);margin-left:.4rem}
+.acts{display:flex;gap:.5rem}
+.acts a{font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ink);background:var(--btn);border:2px solid var(--ink);border-radius:99px;padding:.15rem .8rem}
+.acts a:hover{background:var(--ink);color:var(--paper)}
+#materials{background:var(--paper)}
+.resource .actions{margin-top:.2rem}
