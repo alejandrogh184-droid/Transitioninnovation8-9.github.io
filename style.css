@@ -137,7 +137,10 @@ p.num{margin-top:.8rem}
 .matlist li>span:first-child{font-weight:600}
 .matlist em{font-style:normal;font-weight:500;font-size:.8rem;color:var(--muted);margin-left:.4rem}
 .acts{display:flex;gap:.5rem}
-.acts a{font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ink);background:var(--btn);border:2px solid var(--ink);border-radius:99px;padding:.15rem .8rem}
-.acts a:hover{background:var(--ink);color:var(--paper)}
 #materials{background:var(--paper)}
 .resource .actions{margin-top:.2rem}
+.acts a,.acts button{font:inherit;font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ink);background:var(--btn);border:2px solid var(--ink);border-radius:4px;box-shadow:2px 2px 0 var(--ink);padding:.3rem .9rem;cursor:pointer;transition:transform .12s,box-shadow .12s}
+.acts a:hover,.acts button:hover{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--ink)}
+.grouphead{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin-bottom:.8rem}
+.grouphead h3{margin-bottom:0}
+.acts{flex-wrap:wrap}
