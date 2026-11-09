@@ -144,3 +144,5 @@ p.num{margin-top:.8rem}
 .grouphead{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin-bottom:.8rem}
 .grouphead h3{margin-bottom:0}
 .acts{flex-wrap:wrap}
+.preview.tall{height:640px;margin-top:1rem}
+.sub .actions{margin-top:1rem}
